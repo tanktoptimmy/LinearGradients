@@ -26,8 +26,8 @@ const linearProps = {
 }
 
 <LView
-    style={[styles.block, styles.border]}
-    background= {linearProps}
+  style={[styles.block, styles.border]}
+  background={linearProps}
 >
   <Text>this is a linear</Text>
 </LView>
