@@ -13,7 +13,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <View style={styles.flex}>
-        <LView style={styles.block} background={"#ff0"}>
+        <LView style={[styles.block, styles.border]} background={"#ff0"}>
           <Text>this is the yellow one</Text>
         </LView>
         <LView style={styles.block} background={BadgesGameRibbonBackgroundGradient}>
@@ -48,5 +48,11 @@ const styles = StyleSheet.create({
   block: {
     height: 100,
     width: 100,
+    display: "flex",
+    justifyContent: "center"
+  },
+  border: {
+    borderWidth: 2,
+    borderRadius: 20,
   }
 });

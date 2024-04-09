@@ -8,8 +8,8 @@ e.g. flat yellow background colour
 
 ```
 <LView
-    style={styles.block}
-    background={"#ff0"}
+  style={styles.block}
+  background={"#ff0"}
 >
   <Text>this is the yellow one</Text>
 </LView>
@@ -26,7 +26,7 @@ const linearProps = {
 }
 
 <LView
-    style={styles.block}
+    style={[styles.block, styles.border]}
     background= {linearProps}
 >
   <Text>this is a linear</Text>
